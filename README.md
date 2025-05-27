@@ -45,7 +45,7 @@ Retail_Sales_ETL_Project/
 │
 |
 ├── scripts/
-├── Retail_Sales_ETL_KPI_Analysis.ipynb
+├── sales_etl_pipeline.ipynb
 |
 ├── requirements.txt
 └── README.md
@@ -84,7 +84,7 @@ Retail_Sales_ETL_Project/
 
 ## 📘 Jupyter Notebook
 
-👉 [Retail Sales ETL + KPI Analysis Notebook](Retail_Sales_ETL_KPI_Analysis.ipynb)
+👉 [Retail Sales ETL + KPI Analysis Notebook](scripts/sales_etl_pipeline.ipynb)
 
 The notebook includes:
 - Data loading and transformation
