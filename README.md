@@ -27,4 +27,4 @@ This project simulates an ETL pipeline to process monthly sales data from a reta
 
 ---
 
-*Built with 💪 by Ashwani for 15 LPA DE roles*
+*Built with 💪 by Ashwani*
