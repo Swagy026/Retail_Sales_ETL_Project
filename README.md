@@ -1,23 +1,33 @@
-🛒 Retail Sales ETL & KPI Dashboard Project
+# 🛒 Retail Sales ETL & KPI Dashboard Project
 
-🚀 Project Summary
-This project simulates a real-world Retail ETL + Reporting Pipeline where raw transactional data is processed using Python (pandas), cleaned, transformed, and analyzed to derive key performance indicators. The results are then visualized through a Power BI dashboard that can be used by business teams for strategic decisions.
+## 🚀 Project Summary
 
-📌 Objective
--Ingest raw sales CSV data
--Clean and prepare the dataset using Python
--Compute KPIs like Revenue, Profit, Margin, and Units Sold
--Aggregate metrics by Region and Product Category
--Export final data for visualization
--Create a dashboard using Power BI to present insights
+This is a complete end-to-end **ETL + KPI Dashboard** project simulating a retail sales pipeline.  
+Built using **Python (pandas)** and **Power BI**, the project transforms raw CSV data into business-ready insights through data cleaning, KPI calculations, and rich dashboard visualizations.
 
-🧰 Tools & Technologies
-Tool	                 Purpose
-Python	               Core data processing & calculations
-Pandas	               DataFrame operations & ETL logic
-Power BI	             Visualize final KPIs & insights
-Git/GitHub	           Version control & project hosting
-Jupyter Notebook	     Interactive development
+---
+
+## 📌 Objective
+
+- Load and process raw transactional data
+- Clean & transform using Python (ETL)
+- Compute KPIs: Revenue, Profit, Margin, Units Sold
+- Aggregate by Region and Product Category
+- Visualize in Power BI for executive decision-making
+
+---
+
+## 🧰 Tools & Technologies
+
+| Tool        | Purpose                           |
+|-------------|-----------------------------------|
+| Python      | Data transformation & cleaning    |
+| pandas      | DataFrame manipulation            |
+| Power BI    | Visual dashboard for KPIs         |
+| GitHub      | Project versioning and showcase   |
+| Jupyter Notebook | Code documentation & workflow |
+
+---
 
 📁 Folder Structure
 Retail_Sales_ETL_Project/
@@ -37,61 +47,91 @@ Retail_Sales_ETL_Project/
 ├── scripts/
 ├── Retail_Sales_ETL_KPI_Analysis.ipynb
 |
-|
+├── requirements.txt
 └── README.md
 
-📂 Data Dictionary
-Column	                 Description
-date	                   Date of transaction
-region	                 Sales region
-product_category	       Category of the sold product
-units_sold	             Quantity of units sold
-unit_price	             Price per unit
-cost	Total              cost of the sale
-revenue	                 units_sold × unit_price
-profit	                 revenue − cost
-margin	                 profit / revenue
 
-⚙️ Process Flow (ETL)
-Extraction: Load raw .csv data
+---
 
-Transformation:
--Clean column names
--Convert date column
--Compute revenue, profit, margin
--Drop missing values if critical fields are empty
+## 📈 Data Dictionary
 
-Load: Save cleaned data and aggregated results
+| Column           | Description                             |
+|------------------|-----------------------------------------|
+| `date`           | Date of transaction                     |
+| `region`         | Region where the sale occurred          |
+| `product_category` | Product category                      |
+| `units_sold`     | Number of units sold                    |
+| `unit_price`     | Price per unit                          |
+| `cost`           | Total cost of the transaction           |
+| `revenue`        | units_sold × unit_price                 |
+| `profit`         | revenue − cost                          |
+| `margin`         | profit / revenue                        |
 
-📊 Power BI Dashboard
-The following visuals were created using summary_report.csv:
-Total Revenue, Profit, Units Sold (KPIs)
-Revenue by Region (Bar chart)
-Profit by Product Category (Column chart)
-Average Margin by Region (Donut chart)
-Detailed Table view
+---
 
-📈 Key Business Insights
-🏆 Highest Revenue: North Region
-💰 Most Profitable Category: Electronics
-📉 Lowest Margin Region: West
-📦 High volume: Fashion and Home Decor categories
+## ⚙️ ETL Process Flow
 
-🛠️ How to Run (Locally)
-Clone this repo:
+1. Extract raw sales data from CSV
+2. Transform:
+   - Rename & clean columns
+   - Convert data types
+   - Calculate Revenue, Profit, Margin
+3. Load final output as:
+   - Cleaned CSV
+   - Aggregated summary report
+
+---
+
+## 📘 Jupyter Notebook
+
+👉 [Retail Sales ETL + KPI Analysis Notebook](Retail_Sales_ETL_KPI_Analysis.ipynb)
+
+The notebook includes:
+- Data loading and transformation
+- Groupby aggregations
+- Output file generation
+- Logging and error handling
+
+---
+
+## 📊 Power BI Dashboard
+
+Visual KPIs displayed in the dashboard:
+
+- Total Revenue, Profit, Units Sold (Cards)
+- Revenue by Region (Bar chart)
+- Profit by Product Category (Column chart)
+- Average Margin by Region (Donut chart)
+
+![Dashboard Screenshot](visuals/dashboard_screenshot.png)
+
+🔗 [Download Power BI File (.pbix)](visuals/dashboard.pbix)
+
+---
+
+## 🧾 How to Run
+1. Clone the repository
 git clone https://github.com/Swagy026/Retail_Sales_ETL_Project.git
+cd Retail_Sales_ETL_Project
 
-Run the ETL notebook:
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Run the ETL Notebook
 jupyter notebook Retail_Sales_ETL_KPI_Analysis.ipynb
 
-✅ Future Enhancements
--Add automation using Apache Airflow
--Store raw data in cloud (GCS / S3)
--Write final output to BigQuery / SQL database
--Automate dashboard refresh in Power BI Service
--Add unit testing and data validation steps
+💡 Key Business Insights
+💰 Highest revenue from North region
+📦 Most profitable category: Electronics
+⚠️ West region has lowest profit margin
 
-🧑‍💼 Author
-Built with 💪 by Ashwani Chaudhary
-For Data Analyst / Data Engineer roles 
+🔮 Future Enhancements
+-Automate ETL with Apache Airflow
+-Store data in cloud (GCS / S3)
+-Push data into BigQuery
+-Embed Power BI into web dashboard
+-Add unit testing & validation
 
+👨‍💻 Author
+Ashwani Chaudhary
+Data Engineer / Analyst 
