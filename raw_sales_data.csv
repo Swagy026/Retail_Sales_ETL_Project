@@ -1,0 +1,7 @@
+Date,Region,Product_Category,Units_Sold,Unit_Price,Cost
+2024-01-01,North,Electronics,100,299.99,25000
+2024-01-01,South,Fashion,80,49.99,3200
+2024-01-01,East,Home Decor,60,89.99,4100
+2024-01-02,North,Fashion,40,39.99,1200
+2024-01-02,West,Electronics,90,279.99,24000
+2024-01-02,South,Home Decor,50,99.99,4600
