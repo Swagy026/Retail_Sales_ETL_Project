@@ -60,7 +60,7 @@ The dashboard enables decision-makers to monitor performance, identify low-margi
 
 ## 📊 Power BI Dashboard Overview
 
-![Retail Dashboard](visuals/dashboard_screenshot.png)
+![Retail Dashboard](dashboard_screenshot.png)
 
 ### ✅ Features:
 - High-level KPIs: Total Revenue, Profit, Units, Margin %
