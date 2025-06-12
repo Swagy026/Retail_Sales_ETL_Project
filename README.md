@@ -3,32 +3,95 @@
 ## 🚀 Project Summary
 
 This end-to-end **ETL + KPI Dashboard project** simulates a real-world retail reporting pipeline.  
-It transforms raw sales data using **Python (Pandas)** into business-ready KPIs and visualizes insights via **Power BI**.
+It transforms raw transactional data using **Python (Pandas)** into business-ready KPIs and visualizes insights via **Power BI**.
 
-The workflow mimics the kind of report automation and data transformation I delivered at Wipro — but using modern, self-coded tools.
+The entire workflow mirrors reporting tasks I performed at Wipro — now rebuilt using modern tools and automation.  
+The dashboard enables decision-makers to monitor performance, identify low-margin regions, and prioritize high-potential categories.
 
 ---
 
-## 📌 Key Business Goals
+## 📌 Key Business Objectives
 
-- 📥 Clean messy transactional data using Pandas
+- 🧹 Clean and transform raw sales data using Python
 - 📊 Calculate KPIs: **Revenue, Profit, Margin, Units Sold**
-- 🌍 Aggregate by **Region & Product Category**
-- 📈 Visualize trends in **Power BI** dashboard
+- 🌍 Analyze by **Region** and **Product Category**
+- 📈 Visualize actionable trends via **Power BI Dashboard**
+
+---
 
 ## 🧰 Tools & Technologies
 
-| Tool        | Purpose                           |
-|-------------|-----------------------------------|
-| Python      | Data transformation & cleaning    |
-| pandas      | DataFrame manipulation            |
-| Power BI    | Visual dashboard for KPIs         |
-| GitHub      | Project versioning and showcase   |
-| Jupyter Notebook | Code documentation & workflow |
+| Tool              | Purpose                                  |
+|-------------------|------------------------------------------|
+| Python + Pandas   | Data cleaning, transformation, KPI calc  |
+| Power BI          | Dashboard for business stakeholders      |
+| Jupyter Notebook  | ETL logic + documentation                |
+| GitHub            | Version control + project showcase       |
 
-🔁 This project mirrors 100+ manual reports I delivered at Wipro, now reimagined with Python.
+🔁 This approach automates reporting previously done via Excel/SAS in my Wipro role — now scalable with Python.
 
 ---
+
+## 📈 Sample Data Dictionary
+
+| Column           | Description                             |
+|------------------|-----------------------------------------|
+| `Date`           | Transaction date                        |
+| `Region`         | Sales region (East, West, etc.)         |
+| `Product_Category` | Electronics, Fashion, Home Decor     |
+| `Units_Sold`     | Quantity sold                           |
+| `Unit_Price`     | Price per unit                          |
+| `Cost`           | Total cost for the transaction          |
+| `Revenue`        | Units × Unit Price                      |
+| `Profit`         | Revenue − Cost                          |
+| `Margin`         | Profit ÷ Revenue                        |
+
+---
+
+## ⚙️ ETL Process Flow
+
+1. **Extract** raw CSV file (`raw_retail_sales_data.csv`)
+2. **Transform** data using Pandas:
+   - Type conversion, column cleanup
+   - Calculate `Revenue`, `Profit`, `Margin`
+3. **Load** into cleaned CSV & summary report for Power BI
+
+---
+
+## 📊 Power BI Dashboard Overview
+
+![Retail Dashboard](visuals/dashboard_screenshot.png)
+
+### ✅ Features:
+- High-level KPIs: Total Revenue, Profit, Units, Margin %
+- Bar charts: Revenue by Region, Margin by Category
+- Line chart: Daily Revenue Trend
+- Interactive summary table
+- Slicers for Region & Category
+- Business insights summary for decision-makers
+
+---
+
+## 🧠 Key Business Insights
+
+- 📉 **West region** shows high revenue but **lowest margin** — optimization opportunity
+- 💡 **Fashion** maintains strong and stable margins (~30.6%) — potential to scale
+- 📈 **Daily trends** show consistent Q1 performance across India
+
+---
+
+## 🧪 Real-World Impact
+
+> At Wipro, I created and validated 100+ recurring reports across payroll and data ops.  
+> This project reflects how I now **automate** that process using Python + Power BI, reducing manual effort and error rates.
+
+It shows I can build **full-cycle reporting systems**:  
+from raw data → cleaned KPIs → actionable dashboards.
+
+---
+
+## 📁 Folder Structure
+
 
 📁 Folder Structure
 Retail_Sales_ETL_Project/
@@ -51,50 +114,10 @@ Retail_Sales_ETL_Project/
 ├── requirements.txt
 └── README.md
 
-
 ---
 
-## 📈 Data Dictionary
+## 💼 Let’s Connect
 
-| Column           | Description                             |
-|------------------|-----------------------------------------|
-| date           | Date of transaction                     |
-| region         | Region where the sale occurred          |
-| product_category | Product category                      |
-| units_sold     | Number of units sold                    |
-| unit_price     | Price per unit                          |
-| cost           | Total cost of the transaction           |
-| revenue        | units_sold × unit_price                 |
-| profit         | revenue − cost                          |
-| margin         | profit / revenue                        |
-
----
-
-## ⚙️ ETL Process Flow
-
-1. Extract raw sales data from CSV
-2. Transform:
-   - Rename & clean columns
-   - Convert data types
-   - Calculate Revenue, Profit, Margin
-3. Load final output as:
-   - Cleaned CSV
-   - Aggregated summary report
-
----
-## 📊 Power BI Dashboard
-![Retail Dashboard](visuals/dashboard_screenshot.png)
-
-## 🧠 Real-World Use Case
-
-> In my previous role at Wipro, we often worked with regional payroll and sales reports in Excel.  
-> This project reflects how I could now **replace manual Excel work with automated ETL scripts + modern dashboards**, reducing time and human error.
-
-It proves my ability to **build full-cycle reporting tools using Python**, exactly what’s needed in analyst/automation roles.
-
----
-
-📬 **Need a Python-powered analyst?**  
-I’m available for interviews immediately — connect on [LinkedIn](www.linkedin.com/in/ashwani-kumar-data-analyst).
-
-
+📬 Looking for a Python-powered analyst with enterprise reporting experience?  
+I’m available for interviews now.  
+📎 [LinkedIn Profile](https://www.linkedin.com/in/ashwani-kumar-data-analyst)
